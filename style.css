@@ -1,0 +1,11 @@
+.block_title{
+    margin: 0px;
+}
+#main_navigation{
+    border: 2px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    justify-items: center;
+    align-items: center;
+}

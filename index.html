@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <style>
+        #main_bloc_position{
+            position: relative;
+            width: 80%;
+            float: left;
+        }
+        #side_panel{
+            width: 20%;
+            position: relative;
+        }
+        .spoiler{
+            visibility: hidden;
+            position: absolute;
+            padding: 5px 5px 5px 25px  ;
+        }
+        #check{
+            margin: 0px;
+            visibility: hidden;
+        }
+        #check:checked + .spoiler{
+            position: absolute;
+            z-index: 1;
+            background-color: lightblue;
+            border: 1px solid black;
+            visibility: visible;
+        }
+        .link{
+            text-decoration: none;
+        }
+        .link:hover{
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body style="background-color: lightcyan">
+    <header>
+        <h1 style="text-align: center; color: darkslateblue;"><strong>Плюси та недоліки різних типів з'єднань проводів</strong></h1>
+        <nav id="main_navigation">
+            <div class="container">
+                <label for="check" class="menu">Використані джерела</label>
+                <input id="check" name="check" type="checkbox" class="header_chek">
+                <div class="spoiler">
+                    <ol style="margin: 0px; padding: 0px;">
+                        <li><a class="link" href="https://knureigs.github.io/itech/" target="_blank">Internet-технології</a></li>
+                        <li><a class="link" href="https://uk.wikipedia.org/wiki/%D0%9A%D0%BE%D1%80%D0%BE%D0%B7%D1%96%D1%8F#Загальна_і_локальна_корозія" target="_blank">Wikipedia</a></li>
+                        <li><a class="link" href="https://profosvita.online/courses/course-v1:Profosvita+CS-K002SFPL+2024/courseware/8d73031584d54692837f85f333fee31d/bc9b1756f1e54b86bf14823169046530/6?activate_block_id=block-v1%3AProfosvita%2BCS-K002SFPL%2B2024%2Btype%40vertical%2Bblock%40e20979c06a454227a976103363a54d10" target="_blank">Проф. освіта: Методи та способи з'єднання проводів і кабелів</a></li>
+                        <li><a class="link" href="https://developer.mozilla.org/ru/docs/Learn_web_development/Core/CSS_layout/Flexbox" target="_blank">Flexbox</a></li>   
+                    </ol>
+                </div>
+            </div>
+            <div class="container"><a>Репозиторій</a></div>
+            <div class="container"><a>kas</a></div>
+        </nav>
+    </header>
+    <section id="main_bloc_position">
+        <section id="introduction" class="">
+            <p>Буде розглянуто 7 способів з'єднання проводів, більшість з яких потребують спеціального обладнання та знань.<br>
+                Інколи виникає потреба об'єднати два провідника для забезпечення подачі електроенергії на прилад, але інколи виникають моменти що пряме з'єднання недопустиме, наприлад мідний провідник неможна об'єднувати з алюмінієвим на пряму, оскільки при прямому з'єднанні цих провідників виникає <a href="https://uk.wikipedia.org/wiki/%D0%9A%D0%BE%D1%80%D0%BE%D0%B7%D1%96%D1%8F#Загальна_і_локальна_корозія" title="Посилання на статтю в Wikipedia" target="_blank">гальванічна корозія</a>, що призводить до погірщення контакту та надмірному нагріванню в місці з'єднання. Для запобігання такого використовують спеціальні з'єднання</p>
+            <nav id="navigation">
+                <h2>Що буде розглянуто:</h2>
+                <ol>
+                    <li><a href="#twisting">Скрутка</a></li>
+                    <li><a href="#soldering">Пайка</a></li>
+                    <li><a href="#welding">Зварювання</a></li>
+                    <li><a href="#crimping">Опресування</a></li>
+                    <li><a href="#bolt">Гвинтове з'єднання</a></li>
+                    <li><a href="#screw_terminal">З'єднання з допомогою винтових клем</a></li>
+                    <li><a href="#spring_terminal">З'єднання з допомогою пружинних клем</a></li>
+                    <li><a href="#conclusion">Висновки</a></li>
+                    <li><a href="#questions">Дворівневий список з питаннями та варіантами відповідей</a></li>
+                    <li><a href="#variant">Решта виконаних завдань згідно варіанту 0</a></li>
+                </ol>
+            </nav>
+        </section>
+        <section id="twisting">
+            <h2 class="block_title">Скрутка</h2><br>
+            <ul>
+                <li>Подібний метод об'єднання рекомендується тільки для тимчасових схем та з'єднанняза перед пайкою/зварюванням.</li>
+                <li><h3 class="block_title">Плюси:</h3><br>
+                    <ul>
+                        <li>Швидкий монтаж</li>
+                        <li>Відсутність неохідності мати спеціальний інструмент</li>
+                    </ul>    
+                </li>
+                <li><h3 class="block_title">Мінуси:</h3><br>
+                    <ul>
+                        <li>Дуже низька надійність</li>
+                        <li>Можливий розрив контакту</li>
+                        <li>Не відповідає стандартам</li>
+                        <li>Не можна об'єднувати провідники з різних матеріалів</li>
+                    </ul> 
+                </li>
+            </ul>
+        </section>
+        <section>
+
+        </section>        
+    </section>
+    <aside id="side_panel">
+        <section>
+            <form>
+                <table>
+                    <caption><h3>Форма реєстрації</h3></caption>
+                    <tr>
+                        <td>
+                            <label for="name">Ім'я:</label>
+                        </td>
+                        <td>
+                            <input type="text" id="name"><br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="second_name">Прізвище:</label>
+                        </td>
+                        <td>
+                            <input type="text" id="second_name"><br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="user_name">Ім'я користувача:</label>
+                        </td>
+                        <td>
+                            <input type="text" id="user_name"><br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="email">Електронна пошта:</label><br>
+                        </td>
+                        <td>
+                            <input type="text" id="email"><br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="password">Пароль:</label><br>
+                        </td>
+                        <td>
+                            <input type="password" id="password"><br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <input type="submit" value="Реєстрація">
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </section>
+    </aside>
+    <footer></footer>
+</body>
+</html>
