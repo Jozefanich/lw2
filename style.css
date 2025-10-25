@@ -9,3 +9,57 @@
     justify-items: center;
     align-items: center;
 }
+.spoiler{
+    visibility: hidden;
+    position: absolute;
+    padding: 5px 5px 5px 25px  ;
+}
+.check{
+    margin: 0px;
+    visibility: hidden;
+}
+#check:checked + .spoiler{
+    position: absolute;
+    z-index: 1;
+    background-color: lightblue;
+    border: 1px solid black;
+    visibility: visible;
+}
+#check2:checked + .spoiler{
+    position: absolute;
+    z-index: 1;
+    background-color: lightblue;
+    border: 1px solid black;
+    visibility: visible;
+}
+.link, .hiden_link{
+    text-decoration: none;
+    color: black;
+}
+.link:checked{
+    color: black;
+}
+.link:hover{
+    background-color: aqua;
+}
+.menu:hover{
+    cursor:pointer;
+}
+.conclusion_href{
+    text-decoration: none;
+    font-family:'Times New Roman', Times, serif;
+    font-style: italic;
+    font-weight: bold;
+}
+.reg_form{
+    font-size:large;
+}
+#main_block{
+    display: grid;
+    grid-template-columns: 8fr 2fr;
+}
+.side_panel{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
