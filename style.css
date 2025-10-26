@@ -59,7 +59,9 @@
 .side_panel{
     display: flex;
     flex-direction: row;
+    justify-content: center;
     align-items: center;
+    align-content: center;
     text-align: center;
 }
 .question_block{
