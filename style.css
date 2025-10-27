@@ -42,7 +42,7 @@
     cursor:pointer;
 }
 .conclusion_href,
-.conclusion_href:checked{
+.conclusion_href:visited{
     color: #0000e6;
     text-decoration: none;
     font-family:'Times New Roman', Times, serif;
