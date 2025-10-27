@@ -20,7 +20,7 @@
         .show_ansver:checked + label::before{
             content: "Приховати відповідь";
         }
-        .show_ansver:checked ~ ol>li[data-content="<!-- -->"],
+        .show_ansver:checked ~ ol>li[data-content="!--"],
         .show_ansver:checked ~ ol>li[data-content="le"],
         .show_ansver:checked ~ ol>li[data-content="type"],
         .show_ansver:checked ~ ol>li[data-content="li"]
@@ -393,8 +393,8 @@
                     <input type="checkbox" id="ansver1" class="show_ansver">
                     <label for="ansver1"></label>
                     <ol type="a">
-                        <li data-content="<!-- -->">&lt;!-- --&gt;</li>
-                        <li data-content="<">\\</li>
+                        <li data-content="!--">&lt;!-- --&gt;</li>
+                        <li data-content="\\">\\</li>
                         <li data-content="--">--</li>
                         <li data-content="/* */">/* */</li>
                     </ol>
